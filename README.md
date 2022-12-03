@@ -33,7 +33,13 @@ My bad memory, and fact that I only just managed to scrape a passing grade in my
 I go over each feature twice, each time trying to find a small increment for the offensive and defensive raitings which reduce the metric closer to 0.
 
 ## Results and predictions
-The optimized features are seen in [`features.py`](./features.py), and I've used them to calculate predictions for the playoffs:
+The optimized features are seen in [`features.py`](./features.py). Here are some noteworthy results:
+ * Having angels in your flag really helps with defensive raiting of +3.116. Sadly for Qatar, having the color maroon in your flag is the worst for defense at -4.649.
+ * They key for having a good offensive raiting is clearly the light blue color (+2.021), and birds (+1.879). Birds however, aren't really useful for your defense (-2.172).
+ * If you think your team isn't giving it all on offense, it's probably the color brown (-2.438).
+ * And apparently having stars doesn't really do anything. +0.017 on defense and -0.029 on offense.
+
+I've used these parameters to calculate predictions for the playoffs:
 ### Round of 16
 * Netherlands will beat the USA. Expecting 0-0 and Netherlands winning -- I guess by penelty shootout?
 * Argentina will beat Australia 2-1.
@@ -58,3 +64,6 @@ The optimized features are seen in [`features.py`](./features.py), and I've used
 * Argentina will beat France 2-1.
 
 **I will update this section with results and recalculate predictions using the same feature parameters if any prediction is wrong**
+
+## Summary
+Football is a really random game. But at least we can make some sense of it all by looking at flags. Or maybe we can't. I don't really care.
