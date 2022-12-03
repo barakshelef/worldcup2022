@@ -34,7 +34,7 @@ I go over each feature twice, each time trying to find a small increment for the
 
 ## Results and predictions
 The optimized features are seen in [`features.py`](./features.py). Here are some noteworthy results:
- * Having angels in your flag really helps with defensive raiting of +3.116. Sadly for Qatar, having the color maroon in your flag is the worst for defense at -4.649.
+ * Having angles in your flag really helps with defensive raiting of +3.116. Sadly for Qatar, having the color maroon in your flag is the worst for defense at -4.649.
  * They key for having a good offensive raiting is clearly the light blue color (+2.021), and birds (+1.879). Birds however, aren't really useful for your defense (-2.172).
  * If you think your team isn't giving it all on offense, it's probably the color brown (-2.438).
  * And apparently having stars doesn't really do anything. +0.017 on defense and -0.029 on offense.
