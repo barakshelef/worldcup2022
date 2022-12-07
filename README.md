@@ -42,26 +42,49 @@ The optimized features are seen in [`features.py`](./features.py). Here are some
 I've used these parameters to calculate predictions for the playoffs:
 ### Round of 16
 * Netherlands will beat the USA. Expecting 0-0 and Netherlands winning -- I guess by penelty shootout?
+    * _Actual: 3-1. **Calculated winner correctly**, wrong score._
 * Argentina will beat Australia 2-1.
+    * _Actual: 2-1. **Calculated winner and score correctly.**_
 * Croatia will beat Japan in penelty shootout. Expecting 0-0.
+    * _Actual: 1-1. **Calculated winner and goal difference correctly**. Wrong score._
 * Brazil will beat Korea in penelty shootout. Expecting 0-0.
+    * _Actual: 4-1. **Calculated winner correctly**, wrong score._
 * France will beat Poland 2-0.
+    * _Actual: 3-1. **Calculated winner and goal difference correctly**, wrong score.
+    **until the 91st minute it was still 2-0!**_
 * England will beat Senegal in penelty shootout. Expecting 2-2.
+    * _Actual: 3-0. **Calculated winner correctly**, wrong score._
 * Morocco will beat Spain 2-1.
+    * _Actual: 0-0. **Calculated winner correctly**, wrong score._
 * Switzerland will beat Portugal 2-1.
+    * _Actual: 1-6. Completely incorrect calculation._
+
+#### Round of 16 overview
+7/8 outcomes predicted correctly. 3 instances down to the goal difference. once with exact score.
+
+I've recalculated the features and results for the upcoming quarter finals.This changed some results from the original calculation:
+* Portugal-Morocco with the previous features was calculated as 2-2 with Portugal winning the penelty shootout. It is now predicted to be 2-1 for Portugal. So it seems they saved themselves a penelty shootout! Good job!
+* Brazil will beat Croatia 1-0 instead of 0-minus 1 (_mathematically speaking_). So no real change here.
+
+In the semis we see 1 change:
+* France-Portugal with the previous features was calculated as 3-1. It is now predicted to be 2-2 with Portugal taking the penelty shootout. So we get a Messi-Ronaldo final!
+
+In the final we see a slight change:
+* Argentina-Portugal with the previous features was calculated as 3-1. It is now predicted to be 2-2 with Argentina winning the penelty shootout.
+
 
 ### Quarter Final
 * Argentina will beat the Netherlands 2-0.
-* Brazil will beat Croatia 0-minus 1 _mathematically speaking_
+* Brazil will beat Croatia 1-0
 * France will beat England 2-1
-* Morroco will beat Switzerland in penelty shootout. Expecting 1-1.
+* Portugal will beat Morocco 2-1
 
 ### Semi Final
 * Argentina will beat Brazil 1-0.
-* France will beat Morocco 2-1.
+* Portugal will beat France in penelty shootout. Expecting 2-2.
 
 ### Finals
-* Argentina will beat France 2-1.
+* Argentina will beat Portugal in penelty shootout. Expecting 2-2.
 
 **I will update this section with results and recalculate predictions using the same feature parameters if any prediction is wrong**
 

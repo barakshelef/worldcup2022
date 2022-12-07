@@ -133,32 +133,23 @@ def optimize(fit_method: Callable[[], float]):
 
 if __name__ == '__main__':
 
-    optimize(calculate)
+    # optimize(calculate)
 
-    pprint({k: v.to_json() for (k, v) in FEATURES.items()})
+    # pprint({k: v.to_json() for (k, v) in FEATURES.items()})
 
-    calculate(should_print=True)
+    # calculate(should_print=True)
 
     games = [
-        # 16
-        ('Netherlands', 'USA'),
-        ('Argentina', 'Australia'),
-        ('Japan', 'Croatia'),
-        ('Brazil', 'Korea'),
-        ('France', 'Poland'),
-        ('England', 'Senegal'),
-        ('Morocco', 'Spain'),
-        ('Portugal', 'Switzerland'),
         # QF
         ('Netherlands', 'Argentina'),
         ('Croatia', 'Brazil'),
         ('France', 'England'),
-        ('Morocco', 'Switzerland'),
+        ('Morocco', 'Portugal'),
         # SF
         ('Argentina', 'Brazil'),
-        ('France', 'Morocco'),
+        ('France', 'Portugal'),
         # F
-        ('Argentina', 'France'),
+        ('Argentina', 'Portugal'),
     ]
 
     print("Guessing next rounds:")

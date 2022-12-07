@@ -50,4 +50,14 @@ RESULTS: dict[Match: Score] = {
     ("Senegal", "Netherlands"): (0, 2),
     ("USA", "Wales"): (1, 1),
     ("Qatar", "Ecuador"): (0, 2),
+
+    # Round of 16
+    ('Netherlands', 'USA'): (3, 1),
+    ('Argentina', 'Australia'): (2, 1),
+    ('Japan', 'Croatia'): (1.2, 1.6),
+    ('Brazil', 'Korea'): (4, 1),
+    ('France', 'Poland'): (3, 1),
+    ('England', 'Senegal'): (3, 0),
+    ('Morocco', 'Spain'): (0.6, 0.0),
+    ('Portugal', 'Switzerland'): (6, 1),
 }
